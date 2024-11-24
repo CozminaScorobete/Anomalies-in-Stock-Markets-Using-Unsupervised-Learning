@@ -15,7 +15,7 @@ os.makedirs(output_dir, exist_ok=True)
 # Download data for each company
 for ticker in ticker_symbols:
     print(f"Fetching data for {ticker}...")
-    data = yf.download(ticker, start="2020-01-01", end="2023-01-01")
+    data = yf.download(ticker, start="2018-01-01", end="2024-01-01")
     data_dict[ticker] = data  # Store the DataFrame in the dictionary
 
     # Save the data to a CSV file
